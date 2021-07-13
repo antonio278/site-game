@@ -1,0 +1,63 @@
+body{
+    background-image: url('img/OIP.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;
+    background-attachment: fixed;
+    
+
+    
+}
+
+form{
+    background-color: #0d0d0da6;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+
+}
+
+.Login{
+    background-color:#0c0c0dba;
+    color:white;
+    font-size: 15px;
+    border-radius: 10px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    line-height: 25px;
+    margin-right: 15%;
+    padding: 45px;
+}
+
+button a{
+    text-decoration: none;
+    font-size: 15px;
+    color:white;
+    
+}
+
+button{
+    background-color: dodgerblue;
+    border:none;
+    text-align: center;
+    padding: 15px;
+    width: 88%;
+    border-radius: 10px;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+button:hover{
+    background: cyan;
+}

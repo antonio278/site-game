@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-image: url('img/world.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 800px;
+    min-width: 500px;
+}
+.menu{
+   right: 0;
+   top: 5px;
+   
+}
+.menu ul li{
+    background-color: rgb(2, 2, 48);
+    color:white;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    transform: translate(-22%);
+    display: inline-block;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    left:30%;
+    z-index: 1000;
+    border-radius: 25px;
+    border: 2px solid rgb(253, 251, 251);
+    
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li:hover{
+    background-color: teal;
+}
+.menu ul ul {
+    margin-left: -19px;
+}
+.menu ul ul ul{
+    margin-left: 195px;
+    position:absolute;
+    top:0px
+}
+.menu ul ul{
+    display: none;
+}
+.menu ul li:hover > ul{
+    display: block;
+}
+
+#check{
+    display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all 0.2s linear;
+    left: -300px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top:60px;
+}
+nav a{
+    text-decoration: none;
+}
+.link{
+    background-color:#494950;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    transition: all 0.2s linear;
+    color:white;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+.link:hover{
+    background-color: #050542;
+}
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.1s;
+}
